@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div id="game">
+    <div class="scoreboard">
+      <div class="player">
+        <span id="player1"></span><br>
+        <span id="score1">0</span>
+      </div>
+      <div class="player">
+        <span id="player2"></span><br>
+        <span id="score2">0</span>
+      </div>
+    </div>
+    <div id="board">
+      <div class="cell" onclick="placeMarker(0)"></div>
+      <div class="cell" onclick="placeMarker(1)"></div>
+      <div class="cell" onclick="placeMarker(2)"></div>
+      <div class="cell" onclick="placeMarker(3)"></div>
+      <div class="cell" onclick="placeMarker(4)"></div>
+      <div class="cell" onclick="placeMarker(5)"></div>
+      <div class="cell" onclick="placeMarker(6)"></div>
+      <div class="cell" onclick="placeMarker(7)"></div>
+      <div class="cell" onclick="placeMarker(8)"></div>
+    </div>
+    <p id="result"></p>
+    <button onclick="nextRound()">Next Round</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
